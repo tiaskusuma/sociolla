@@ -147,6 +147,9 @@
         <a href="{{ route($prefix . 'reports') }}" class="nav-item {{ request()->routeIs($prefix . 'reports') ? 'active' : '' }}">
             <i class="fa-solid fa-chart-simple"></i> Reports
         </a>
+        <a href="{{ route($prefix . 'chats.index') }}" class="nav-item {{ request()->routeIs($prefix . 'chats.*') ? 'active' : '' }}">
+            <i class="fa-regular fa-comments"></i> Customer Chat
+        </a>
         <a href="{{ route($prefix . 'products') }}" class="nav-item {{ request()->routeIs($prefix . 'products*') ? 'active' : '' }}">
             <i class="fa-solid fa-box-open"></i> Products
         </a>

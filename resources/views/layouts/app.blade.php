@@ -90,6 +90,7 @@
                             <button type="submit" style="background:none; border:none; color:inherit; font:inherit; font-weight:bold; cursor:pointer; padding:0;">Logout</button>
                         </form>
                         <a href="{{ route('cart.index') }}" style="color:@yield('cart_icon_color', '#2b7a6f'); text-decoration:none;"><i class="fa-solid fa-cart-shopping"></i> Cart <span style="background:#4ade80; color:white; padding:2px 5px; border-radius:3px; font-size:0.7rem;">{{ \App\Models\CartItem::where('user_id', Auth::id())->sum('quantity') }}</span></a>
+                        <a href="{{ route('chat.index') }}"><i class="fa-regular fa-comments"></i> Chat</a>
                         <a href="{{ route('profile') }}"><i class="fa-solid fa-user"></i> My Account <i class="fa-solid fa-caret-down"></i></a>
                     @else
                         <a href="{{ route('login') }}">Login</a>

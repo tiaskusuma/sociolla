@@ -89,6 +89,9 @@ Route::middleware(['auth', \App\Http\Middleware\UserMiddleware::class])->group(f
     })->name('orders.rate');
     
     Route::post('/orders/{order_id}/rate', [\App\Http\Controllers\OrderController::class, 'submitRating'])->name('orders.rate.submit');
+
+    Route::get('/chat', [\App\Http\Controllers\ChatController::class, 'index'])->name('chat.index');
+    Route::post('/chat', [\App\Http\Controllers\ChatController::class, 'store'])->name('chat.store');
 });
 
 Route::middleware(['auth', \App\Http\Middleware\AdminMiddleware::class])->prefix('admin')->group(function () {
@@ -115,6 +118,10 @@ Route::middleware(['auth', \App\Http\Middleware\AdminMiddleware::class])->prefix
     Route::get('/backup/download/{filename}', [\App\Http\Controllers\AdminController::class, 'downloadBackup'])->name('admin.backup.download');
     Route::post('/backup/delete/{filename}', [\App\Http\Controllers\AdminController::class, 'deleteBackup'])->name('admin.backup.delete');
     Route::get('/restore', [\App\Http\Controllers\AdminController::class, 'restore'])->name('admin.restore');
+
+    Route::get('/chats', [\App\Http\Controllers\ChatController::class, 'indexAdmin'])->name('admin.chats.index');
+    Route::get('/chats/{id}', [\App\Http\Controllers\ChatController::class, 'showAdmin'])->name('admin.chats.show');
+    Route::post('/chats/{id}', [\App\Http\Controllers\ChatController::class, 'storeAdmin'])->name('admin.chats.store');
 });
 
 Route::middleware(['auth', \App\Http\Middleware\PetugasMiddleware::class])->prefix('petugas')->name('petugas.')->group(function () {
@@ -136,6 +143,10 @@ Route::middleware(['auth', \App\Http\Middleware\PetugasMiddleware::class])->pref
     Route::get('/transactions/{id}/print', [\App\Http\Controllers\AdminController::class, 'transactionPrint'])->name('transactions.print');
     Route::post('/order/{id}/status', [\App\Http\Controllers\AdminController::class, 'updateOrderStatus'])->name('order.status');
     Route::get('/reports', [\App\Http\Controllers\AdminController::class, 'reports'])->name('reports');
+
+    Route::get('/chats', [\App\Http\Controllers\ChatController::class, 'indexAdmin'])->name('chats.index');
+    Route::get('/chats/{id}', [\App\Http\Controllers\ChatController::class, 'showAdmin'])->name('chats.show');
+    Route::post('/chats/{id}', [\App\Http\Controllers\ChatController::class, 'storeAdmin'])->name('chats.store');
 });
 
 Route::middleware('guest')->group(function () {
