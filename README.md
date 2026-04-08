@@ -5,13 +5,13 @@
 
 ---
 
-## 🛒 About The Project
-Aplikasi **Sociolla E-Commerce** ini adalah platform toko *online* modern yang dibangun menggunakan framework **Laravel**. Proyek ini ditujukan untuk memfasilitasi transaksi jual-beli produk kosmetik dan *skincare* dengan fitur terpusat yang mencakup *role management* (Admin, Petugas, dan Pelanggan), keranjang belanja dinamis, hingga *tracking* asisten transaksi & laporan penjualan.
+## 🛒 About My Project
+Web **Sociolla E-Commerce** ini adalah platform toko *online* modern yang dibangun menggunakan framework **Laravel**. Proyek ini ditujukan untuk memfasilitasi transaksi jual-beli produk kosmetik dan *skincare* dari sebuah toko dengan fitur terpusat yang mencakup *role management* (Admin, Petugas, dan Pelanggan), keranjang belanja dinamis, hingga *tracking* asisten transaksi & laporan penjualan.
 
-Aplikasi ini menonjolkan desain visual (UI) estetik berwarna dominan *Pink* khas kosmetik untuk memanjakan visual pengguna.
+Web ini menonjolkan desain visual (UI) estetik berwarna dominan *Pink* khas kosmetik untuk memanjakan visual pengguna.
 
 ## ✨ Key Features
-**👩‍💻 Customer (Pelanggan) Features**
+**👩‍💻 User/Customer (Pelanggan) Features**
 - Otentikasi Pengguna & Lupa Password Ekstra Aman (Verifikasi 4 Data).
 - Katalog produk dinamis berdasarkan tren & kategori.
 - *Add to Cart* dinamis dengan kalkulasi harga seketika (Checklist item).
