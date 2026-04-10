@@ -25,7 +25,7 @@ Web ini menonjolkan desain visual (UI) estetik berwarna dominan *Pink* khas kosm
 - **Laporan Penjualan (Reports):** Pencatatan riwayat transaksi dan kalkulasi omzet.
 - **Database Backup:** Admin bisa melakukan *Backup* `.sql` secara instan dari dalam UI Dashboard tanpa harus menyentuh *phpMyAdmin*.
 
-## 💻 Tech Stack
+## 💻
 - **Framework:** Laravel 10 / 11 (PHP)
 - **Database:** MySQL
 - **Frontend / UI:** Native HTML5, Vanilla CSS, Javascript Vanilla, FontAwesome
@@ -34,9 +34,9 @@ Web ini menonjolkan desain visual (UI) estetik berwarna dominan *Pink* khas kosm
 
 
 ## 🔐 Akun Default
-Jika Anda tidak ingin mendaftar (*Register*), Anda dapat masuk menggunakan peran *Admin* menggunakan data yang ada di database.
+Jika tidak ingin mendaftar (*Register*), Anda dapat masuk menggunakan peran *Admin* menggunakan data yang ada di database.
 
-*(Catatan:* Untuk meregistrasi *Admin / Petugas* baru lewat halaman Register, pastikan memasukan token: **`SOCIOLLA123`** di kolom "Security Token".)
+*(Note:* Untuk meregistrasi *Admin / Petugas* baru lewat halaman Register, pastikan memasukan token: **`SOCIOLLA123`** di kolom "Security Token".)
 
 ---
 **Dibuat dan dirancang untuk keperluan UKK E-Commerce Web Design & System.**
